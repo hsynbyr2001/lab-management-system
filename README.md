@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# Laboratuvar Rapor Yönetim Sistemi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Giriş
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Laboratuvar Rapor Yönetim Sistemi, laborantların hastalar için gerekli raporların kaydedilmesi, güncellenmesi ve yönetilmesi için bir platform sunar. Özgür ve açık kaynak kodlu Typescript ve React ile kodlandı. Redux ToolKit ile veritabanı yönetimi sağlandı ve Mantine ile arayüz oluşturuldu.
 
-## Expanding the ESLint configuration
+## Özellikler
+#### Oluşturma
+Bu sistemde laborantlar hastalar için gerekli raporları, dosya numarası, hasta adı ve soyadı, kimlik numarası, konulan tanı ve açıklaması, rapor tarihi ve fotoğraf eki ve diğer verileri girerek oluşturur. 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Sıralama
+Oluşturulan raporlar rapor tarihine göre yeniden eskiye veya eskiden yeniye sıralanabilir. 
 
-- Configure the top-level `parserOptions` property like this:
+#### Arama
+Hasta ismi soyismi, kimlik numarası veya laborant ismi ve soyismi ile arama yaparak spesifik bir raporu bulabilir.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+#### Düzenleme
+Oluşturulmuş bir rapor istenildiğinde daha sonra bilgileri değiştirilerek yeni haliyle kaydedilebilir.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### Silme
+Oluşturulmuş bir rapor istenildiğinde daha sonra tamamiyle veritabanından silinebilir.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## İçindekiler
+- [Giriş](#giriş)
