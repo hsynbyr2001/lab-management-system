@@ -1,0 +1,38 @@
+.report-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  outline: none;
+}
+
+.report-cell {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 25px;
+  max-width: 300px;
+}
+
+.report-list {
+  width: 1000px;
+}
+
+.icons {
+  font-size: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.gray-small {
+  color: gray;
+  font-size: 10px;
+}
+
+.gray-middle {
+  color: gray;
+  font-size: 11px;
+}
+
+.report-header {
+  margin-bottom: -10px;
+}
