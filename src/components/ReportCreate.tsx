@@ -351,7 +351,8 @@ function reportCreate() {
                                     </Stepper.Completed>
                                 </Stepper>
                                 <Group justify="center" mt="xl">
-                                    <Button variant="default" onClick={prevStep}>Geri</Button>
+                                    {stepperActive !== 0 ? <Button variant="default" onClick={prevStep}>Geri</Button> : <div></div>}
+
                                     {stepperActive === 3 ?
                                         <div>
                                             <Button variant="filled" onClick={handleCreateReport} leftSection={<FaCheck />} fullWidth>Oluştur</Button>
